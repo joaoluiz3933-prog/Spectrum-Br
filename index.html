@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spectrum BR – Plataforma Global de Análise Ideológica</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between">
+
+    <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <span class="text-2xl font-black tracking-wider text-indigo-500">SPECTRUM<span class="text-white">BR</span></span>
+            <span class="text-xs bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 px-2 py-0.5 rounded-full font-mono">v1.0 Pro</span>
+        </div>
+        <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-400">
+            <a href="#testes" class="hover:text-white transition">Testes</a>
+            <a href="#biblioteca" class="hover:text-white transition">Biblioteca (2.000+)</a>
+            <a href="#debates" class="hover:text-white transition">Salas de Debate</a>
+            <a href="#pro" class="text-amber-400 hover:text-amber-300 font-semibold transition">Área PRO</a>
+        </nav>
+        <div class="flex gap-3">
+            <button id="btn-login" class="text-sm px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 font-medium transition">Entrar</button>
+            <button id="btn-registrar" class="text-sm px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 font-medium text-white shadow-lg shadow-indigo-600/30 transition">Criar Conta</button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 flex-1 w-full">
+        <section class="text-center py-16">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-white via-slate-200 to-indigo-400 bg-clip-text text-transparent">
+                Análise Ideológica de Alta Precisão
+            </h1>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-10">
+                Mapeamento multidimensional em 20 eixos políticos e 5 dimensões com acervo filosófico e salas globais de debate.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-left">
+                <div class="bg-slate-800/50 border border-slate-700/50 p-5 rounded-xl hover:border-indigo-500 transition cursor-pointer">
+                    <span class="text-xs font-mono text-indigo-400">20 QUESTÕES</span>
+                    <h3 class="font-bold text-lg text-white mt-1">Express</h3>
+                    <p class="text-xs text-slate-400 mt-2">Mapeamento rápido (~2 min)</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700/50 p-5 rounded-xl hover:border-indigo-500 transition cursor-pointer">
+                    <span class="text-xs font-mono text-indigo-400">40 QUESTÕES</span>
+                    <h3 class="font-bold text-lg text-white mt-1">Recomendado</h3>
+                    <p class="text-xs text-slate-400 mt-2">Análise equilibrada (~5 min)</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700/50 p-5 rounded-xl hover:border-indigo-500 transition cursor-pointer">
+                    <span class="text-xs font-mono text-indigo-400">150 QUESTÕES</span>
+                    <h3 class="font-bold text-lg text-white mt-1">Ultra</h3>
+                    <p class="text-xs text-slate-400 mt-2">Diagnóstico profundo (~18 min)</p>
+                </div>
+
+                <div class="bg-gradient-to-b from-amber-500/10 to-slate-800/80 border border-amber-500/30 p-5 rounded-xl hover:border-amber-400 transition cursor-pointer">
+                    <span class="text-xs font-mono text-amber-400 font-bold">240 QUESTÕES</span>
+                    <h3 class="font-bold text-lg text-amber-300 mt-1">Pro</h3>
+                    <p class="text-xs text-slate-400 mt-2">Precisão máxima + Dossiê PDF</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-950 py-8 px-6 text-center text-xs text-slate-500">
+        <p>© 2026 Spectrum BR. Todos os direitos reservados.</p>
+        <p class="mt-1">Ferramenta de análise e mapeamento estatístico de 20 eixos ideológicos.</p>
+    </footer>
+
+    <!-- Carregamento de todos os Scripts JS -->
+    <script src="js/app.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/radar.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/forum-text.js"></script>
+    <script src="js/audio-debate.js"></script>
+    <script src="js/pdf-export.js"></script>
+</body>
+</html>
